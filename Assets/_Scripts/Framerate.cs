@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR;
+// using UnityEngine.VR;
 
 public class Framerate : MonoBehaviour {
     private TextMesh text;
@@ -40,8 +40,8 @@ public class Framerate : MonoBehaviour {
         lastFrameCount = Time.frameCount;
         lastTime = Time.time;
         _CameraTransform = Camera.main.transform;
-        if (UnityEngine.XR.XRDevice.isPresent) {
-            xrDeviceName = UnityEngine.XR.XRDevice.model;
+        if (true) {
+            xrDeviceName = "Oculus";
             if (xrDeviceName != "" && displayType == displayTypes.XRDevice)
                 text.text = xrDeviceName;
 

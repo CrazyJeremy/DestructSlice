@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10,7 +10,11 @@ Material:
   m_Name: PinkGridQuestLWRP
   m_Shader: {fileID: -6465566751694194690, guid: 7a4a3ef5bf9304f4c8fd9cbc08f8bde6,
     type: 3}
-  m_ShaderKeywords: _EMISSION _HEATSIGNALENCODETOGGLE_ON _USEHEATMAPTOGGLE_ON
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  - _HEATSIGNALENCODETOGGLE_ON
+  - _USEHEATMAPTOGGLE_ON
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -108,9 +112,23 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - BOOLEAN_ADA670AB: 0
     - Vector1_3F7D4FCE: 0.5
+    - Vector1_4038FE15: -0.1
     - Vector1_7BE435A: 3
     - Vector1_876682C: 0.25
     - Vector1_C0B88993: 0.1
@@ -148,6 +166,7 @@ Material:
     - _OutlineWidth: 0.1
     - _Parallax: 0.02
     - _ProceduralCutBumpToggle: 0
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 0.842
@@ -173,6 +192,7 @@ Material:
     - _OutlineColor: {r: 1, g: 1, b: 0, a: 1}
     - _SpecColor: {r: 0.084, g: 0.084, b: 0.084, a: 1}
     - _SpecularColor: {r: 0.15686275, g: 0.15686275, b: 0.15686275, a: 1}
+  m_BuildTextureStacks: []
 --- !u!114 &7814416988139709014
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -185,4 +205,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 1
+  version: 5

@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR;
+//using UnityEngine.VR;
 using TMPro;
+using UnityEngine.XR;
+
 public class Framerate1 : MonoBehaviour {
     private TextMeshPro text;
     private float fps = 0;
@@ -40,17 +42,17 @@ public class Framerate1 : MonoBehaviour {
         lastFrameCount = Time.frameCount;
         lastTime = Time.time;
         _CameraTransform = Camera.main.transform;
-        if (UnityEngine.XR.XRDevice.isPresent) {
-            xrDeviceName = UnityEngine.XR.XRDevice.model;
-            if (xrDeviceName != "" && displayType == displayTypes.XRDevice)
-                text.text = xrDeviceName;
+        // if (UnityEngine.XR.XRDevice.isPresent) {
+        //     //xrDeviceName = XRDisplaySubsystem;
+        //     if (xrDeviceName != "" && displayType == displayTypes.XRDevice)
+        //         text.text = xrDeviceName;
 
             GameObject head = GameObject.Find ("Camera (head)");
             if (head != null) {
                 _CameraTransform = head.transform;
             }
-        }
-        //g = new Gradient();
+        // }
+        g = new Gradient();
         chunksPoolSize = BLINDED_AM_ME.MeshCut.GetChunksPoolSize ();
         keyCodes = System.Enum.GetValues(typeof(KeyCode));
         mr = GetComponent<MeshRenderer>();

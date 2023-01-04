@@ -13,7 +13,7 @@ public class HudLocator : MonoBehaviour {
 
     void Start () {
         if (_CameraTransform == null) _CameraTransform = Camera.main.gameObject.transform;
-        if (UnityEngine.XR.XRDevice.isPresent)
+        if (true)
         {
             if (_CameraTransform == null) _CameraTransform = GameObject.Find("Camera (eye)").transform;
             if (_CameraTransform == null) _CameraTransform = GameObject.Find("CenterEyeAnchor").transform;//quest

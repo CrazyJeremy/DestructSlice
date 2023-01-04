@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR;
+// using UnityEngine.VR;
 
 public class ControlMappingScreen : MonoBehaviour
 {
@@ -22,10 +22,12 @@ public class ControlMappingScreen : MonoBehaviour
     void Update()
     {
         if (!headsetDetected)
-            if (UnityEngine.XR.XRDevice.isPresent)
+            
+            // if (UnityEngine.XR.XRDevice.isPresent)
+            if (true)    
             {
                 headsetDetected = true;
-                string vrDeviceModel = UnityEngine.XR.XRDevice.model;
+                string vrDeviceModel = "Oculus";
 
                 if (vrDeviceModel.StartsWith("Acer") ||
                     vrDeviceModel.Contains("Windows") ||

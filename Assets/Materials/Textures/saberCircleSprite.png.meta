@@ -288,7 +288,7 @@ TextureImporter:
       213: 4399635999577609736
     second: saberCircleSprite_94
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -308,6 +308,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -317,11 +319,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -339,11 +341,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -354,7 +360,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -365,7 +372,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -376,6 +384,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2384,6 +2393,102 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      saberCircleSprite_80: 2781979004033921795
+      saberCircleSprite_75: -1971538111113858879
+      saberCircleSprite_93: 612324154488723132
+      saberCircleSprite_46: -8684384440058282527
+      saberCircleSprite_8: -2431183444820907987
+      saberCircleSprite_34: 6559353354737671255
+      saberCircleSprite_27: 5044533322038675456
+      saberCircleSprite_24: 6702058173104671369
+      saberCircleSprite_53: 908915006321224926
+      saberCircleSprite_58: -8184068863651790200
+      saberCircleSprite_16: 1991782352164147684
+      saberCircleSprite_35: 9069658834673293164
+      saberCircleSprite_71: -3393400086662105103
+      saberCircleSprite_9: -1874506472360790203
+      saberCircleSprite_26: -3728833897456535955
+      saberCircleSprite_57: -4732377380322605919
+      saberCircleSprite_18: -7551403700274035294
+      saberCircleSprite_39: 8176425906079132258
+      saberCircleSprite_28: -5617898419170136520
+      saberCircleSprite_6: -3360642989033408234
+      saberCircleSprite_91: 1645484500686915394
+      saberCircleSprite_25: -4996251575697425191
+      saberCircleSprite_59: -750265524920699763
+      saberCircleSprite_94: 4399635999577609736
+      saberCircleSprite_86: -1310923200739545389
+      saberCircleSprite_1: 5473033370550684741
+      saberCircleSprite_72: -6061432337763959595
+      saberCircleSprite_90: -4727087211002362407
+      saberCircleSprite_5: -8176179396847271385
+      saberCircleSprite_47: 3395083927498533982
+      saberCircleSprite_43: 3986660516250556342
+      saberCircleSprite_36: 1191182233976926798
+      saberCircleSprite_76: -2773803140494244251
+      saberCircleSprite_87: -6387890444600220668
+      saberCircleSprite_12: 2420965346973179504
+      saberCircleSprite_74: 2089360629844209186
+      saberCircleSprite_45: 2653420816193103067
+      saberCircleSprite_30: -5505516073259829396
+      saberCircleSprite_61: 8372637650955381309
+      saberCircleSprite_82: 6274861112960545011
+      saberCircleSprite_21: 1265271656074159319
+      saberCircleSprite_31: 7568279674121973361
+      saberCircleSprite_49: -340738460867611485
+      saberCircleSprite_29: 4195871634602232065
+      saberCircleSprite_65: -1796443409450179766
+      saberCircleSprite_85: 1874264816961147737
+      saberCircleSprite_78: -3626466120744392890
+      saberCircleSprite_63: 5974664030317790381
+      saberCircleSprite_62: -1967457683849912736
+      saberCircleSprite_68: -2714497442706671906
+      saberCircleSprite_15: -1286468061633571032
+      saberCircleSprite_33: 3927067002068001745
+      saberCircleSprite_83: -1153337610214870651
+      saberCircleSprite_37: -1902342322349886081
+      saberCircleSprite_67: -6662742695928234696
+      saberCircleSprite_11: -8147391913667456367
+      saberCircleSprite_50: 7037231603997283186
+      saberCircleSprite_81: -1062990162374729458
+      saberCircleSprite_60: -1587014733939790213
+      saberCircleSprite_77: 5833481919205261765
+      saberCircleSprite_4: 7835892572133697533
+      saberCircleSprite_56: 1419071523269948641
+      saberCircleSprite_40: 6511823697255826383
+      saberCircleSprite_2: 8721045561957110757
+      saberCircleSprite_52: -1258351829840717242
+      saberCircleSprite_66: -4223192781046602482
+      saberCircleSprite_13: 3283385765379835752
+      saberCircleSprite_70: -7109142547231394656
+      saberCircleSprite_38: -7344138054926060648
+      saberCircleSprite_73: -5272943772828307018
+      saberCircleSprite_20: 6474622576340521764
+      saberCircleSprite_41: -4118890152268248287
+      saberCircleSprite_44: -7799553353150906323
+      saberCircleSprite_42: -490960424005030730
+      saberCircleSprite_92: 7922955423414827047
+      saberCircleSprite_89: -2697491193179762659
+      saberCircleSprite_55: -402292100990233418
+      saberCircleSprite_7: 5602095526027485063
+      saberCircleSprite_64: 1624725965241961084
+      saberCircleSprite_23: 7926012582354264100
+      saberCircleSprite_54: -5031858898961238208
+      saberCircleSprite_0: -8433346845087511027
+      saberCircleSprite_48: -6503131884144251042
+      saberCircleSprite_10: -4113330280086428113
+      saberCircleSprite_3: 2084412976327511520
+      saberCircleSprite_69: 3692493387408852771
+      saberCircleSprite_88: 2033359219600894617
+      saberCircleSprite_79: 5251190546091156808
+      saberCircleSprite_19: 8254261703671387673
+      saberCircleSprite_32: -5216655217445196202
+      saberCircleSprite_51: 4107040328709181713
+      saberCircleSprite_84: -4140594364758670552
+      saberCircleSprite_22: 2767068874078216938
+      saberCircleSprite_14: -889278848582261104
+      saberCircleSprite_17: -2084094420429106369
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

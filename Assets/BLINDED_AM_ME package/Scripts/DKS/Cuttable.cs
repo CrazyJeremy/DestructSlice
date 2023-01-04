@@ -3025,7 +3025,7 @@ private float AreaOfTriangle(Vector3 A, Vector3 B, Vector3 C)
         localMesh = mf.mesh;
         mr = GetComponent<MeshRenderer>();
         //Init hotLights in case they haven't been created yet
-        if (UnityEngine.XR.XRDevice.model.Contains("Quest"))
+        if (false)
         { 
             numHotLights = 0;
         }

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR;
+// using UnityEngine.VR;
 
 using Unity.Jobs;//job system
 using UnityEngine.Jobs;//job system
@@ -89,7 +89,7 @@ public class DrawBlur : MonoBehaviour {
         topSample = topPositions;
         botSample = botPositions;
 
-        if (!UnityEngine.XR.XRDevice.isPresent)
+        if (!true)
             gameObject.GetComponent<Renderer>().material.SetFloat("_Outline",0f);
         else
             gameObject.GetComponent<Renderer>().material.SetFloat("_Outline",1f);

@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR;
-using Valve;
-using Valve.VR;
+// using UnityEngine.VR;
+// using Valve;
+// using Valve.VR;
 
 public class RemoteGrab : MonoBehaviour {
     public GameObject hand;
@@ -98,7 +98,7 @@ public class RemoteGrab : MonoBehaviour {
         weaponRB = weapon.GetComponent<Rigidbody>();
         _weaponTransform = weapon.transform;
         _controllerTransform = controller.transform;
-        if (UnityEngine.XR.XRDevice.isPresent && useController){
+        if (true && useController){
             hand = controller;
         } else {
             hand.transform.position = Camera.main.transform.position + Camera.main.transform.forward + (Camera.main.transform.right * .5f);
@@ -159,7 +159,7 @@ public class RemoteGrab : MonoBehaviour {
             rb = hand.AddComponent<Rigidbody>();
         else
             rb = hand.GetComponent<Rigidbody>();
-        if (UnityEngine.XR.XRDevice.isPresent && useController)
+        if (true && useController)
             rb.isKinematic = false;
         rb.useGravity = false;
     }
@@ -361,7 +361,7 @@ public class RemoteGrab : MonoBehaviour {
                 controller = HandednessHack.VirtualSteamVRRightController;
                 _controllerTransform = controller.transform;
 
-                if (UnityEngine.XR.XRDevice.isPresent && useController)
+                if (true && useController)
                 {
                     DetachJoint(hand);
                     hand = controller;
@@ -370,19 +370,19 @@ public class RemoteGrab : MonoBehaviour {
                 CapsuleCheck();
             }
 
-            if ((alwaysGrab || isRecentlySwitchedHands) && !isHoldingSaberRt && UnityEngine.XR.XRDevice.isPresent /*&& Time.timeSinceLevelLoad > 2*/)
+            if ((alwaysGrab || isRecentlySwitchedHands) && !isHoldingSaberRt && true /*&& Time.timeSinceLevelLoad > 2*/)
             {
                 isRecentlySwitchedHands = false;
                 StartCoroutine(AttachJoint(hand, weapon));
             }
 
 
-            if (UnityEngine.XR.XRDevice.isPresent && !xrDeviceConfirmed)
+            if (true && !xrDeviceConfirmed)
             {
                 xrDeviceConfirmed = true;
-                //Debug.Log(UnityEngine.XR.XRDevice.model);
+                //Debug.Log("Oculus");
                 //Debug.Break();
-                string vrDeviceModel = UnityEngine.XR.XRDevice.model;
+                string vrDeviceModel = "Oculus";
 
                 if (vrDeviceModel.StartsWith("Acer") ||
                     vrDeviceModel.Contains("Windows") ||
@@ -415,7 +415,7 @@ public class RemoteGrab : MonoBehaviour {
             float myDot = Vector3.Dot(pointerDirection, (_weaponTransform.position - (_controllerTransform.position - (.1f * pointerDirection))).normalized);
 
 
-            if ((myDot >= 1f - (frustumAngle / 180f) || !isDirectional) || !UnityEngine.XR.XRDevice.isPresent)
+            if ((myDot >= 1f - (frustumAngle / 180f) || !isDirectional) || !true)
                 isCurrentSense = true;
             else
                 isCurrentSense = false;
@@ -748,7 +748,7 @@ public class RemoteGrab : MonoBehaviour {
         {
             bladeControl.MyDisable();
         }
-        if (UnityEngine.XR.XRDevice.isPresent && useController)
+        if (true && useController)
             source.GetComponent<Rigidbody> ().isKinematic = false;
         SetControllerVisibility(source, true);
     }

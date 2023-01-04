@@ -32,9 +32,9 @@ public class SaberGame : MonoBehaviour {
 
         if (!isInitialized)
         {
-            Debug.Log("XRDevice.model: " + UnityEngine.XR.XRDevice.model);
+            Debug.Log("XRDevice.model: " + "Oculus");
 
-            if (UnityEngine.XR.XRDevice.model.Contains("Quest") )
+            if ("Oculus".Contains("Quest") )
             {
                 isQuest = true;
                 OVRManager.fixedFoveatedRenderingLevel = OVRManager.FixedFoveatedRenderingLevel.HighTop;//was HighTop, tried Low

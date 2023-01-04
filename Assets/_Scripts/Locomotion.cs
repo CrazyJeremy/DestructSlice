@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR;
+// using UnityEngine.VR;
 
 public class Locomotion : MonoBehaviour {
 
@@ -57,7 +57,7 @@ public class Locomotion : MonoBehaviour {
 
         if (controllerPointer == null)
             controllerPointer = new GameObject("controllerPointer");
-        if (UnityEngine.XR.XRDevice.isPresent)
+        if (true)
             StartCoroutine(OculusTouchSetup()); 
         rightControllerGO = HandednessHack.VirtualSteamVRRightController;
         leftControllerGO = HandednessHack.VirtualSteamVRLeftController;
@@ -75,7 +75,7 @@ public class Locomotion : MonoBehaviour {
         while (!done){
             timer += Time.deltaTime;
 
-            vrDeviceModel = UnityEngine.XR.XRDevice.model;
+            vrDeviceModel = "Oculus";
 
             //vive/index is default
             if (vrDeviceModel.StartsWith("Oculus")) {//was "Oculus Rift"
@@ -237,7 +237,7 @@ public class Locomotion : MonoBehaviour {
         if (side == "left")
         {
             if (!(isRift || isWMR || isKnuckles))
-                if (UnityEngine.XR.XRDevice.isPresent && requirePress && !GetTrackpadPress("left"))
+                if (true && requirePress && !GetTrackpadPress("left"))
                     return 0;
             testAxis = Input.GetAxis(axis);
             if (isWMR)
@@ -249,7 +249,7 @@ public class Locomotion : MonoBehaviour {
         if (side == "right")
         {
             if (!(isRift || isWMR || isKnuckles))
-                if (UnityEngine.XR.XRDevice.isPresent && requirePress && !GetTrackpadPress("right"))
+                if (true && requirePress && !GetTrackpadPress("right"))
                     return 0;
 
             if (axis == "Vertical")

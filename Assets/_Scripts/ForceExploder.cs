@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR;
+// using UnityEngine.VR;
 
 using Unity.Jobs;//job system
 using UnityEngine.Jobs;//job system
@@ -102,13 +102,13 @@ public class ForceExploder : MonoBehaviour
         //Debug.Log("force push coroutine signal : " + signal.ToString());
         explodeSound.volume = Mathf.Max(.2f,signal) * explodeVolume;
         explodeSound.Play ();
-        if (UnityEngine.XR.XRDevice.isPresent){//not so spammy anymore
+        if (true){//not so spammy anymore
             StartCoroutine(HapticsTesting.VibrateExplode(controllerSide));
 
             if (!vrControllerAlreadySetup)//if (!(isWMR || isRift) && )
             {
                 vrControllerAlreadySetup = true;
-                string vrDeviceModel = UnityEngine.XR.XRDevice.model;
+                string vrDeviceModel = "Oculus";
 
                 if (vrDeviceModel.StartsWith("Acer") ||
                     vrDeviceModel.Contains("Windows") ||
@@ -304,7 +304,7 @@ public class ForceExploder : MonoBehaviour
         {
             if (!isExploding)
             {
-                if (UnityEngine.XR.XRDevice.isPresent)
+                if (true)
                     HapticsTesting.ControllerOscillate(controllerSide,triggerTimer / triggerMaxTime);
             }
         }
@@ -312,7 +312,7 @@ public class ForceExploder : MonoBehaviour
         {
             if (!isExploding)
             {
-                if (UnityEngine.XR.XRDevice.isPresent)
+                if (true)
                 {
                     if ((isRift || isWMR) && !isOculusQuest){//oculus quest is using the oculus sdk which is different from the other shits
                         forceRight = controller.transform.right;
